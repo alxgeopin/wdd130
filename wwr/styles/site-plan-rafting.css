@@ -3,10 +3,10 @@
 
 /* Define CSS variables in :root pseudo-class */
 :root {
-  --primary-color: #396e94;
-  --secondary-color: #e7c24f;
-  --accent1-color: #a43312;
-  --accent2-color: #381d2a;
+  --primary-color: #001F3F;
+  --secondary-color: #3D9970;
+  --accent1-color:#FFD700 ;
+  --accent2-color:#FF4136 ;
   --heading-font: 'Montserrat', sans-serif;
   --paragraph-font: 'Lora', serif;
   --navigation-bg: #396e94;
