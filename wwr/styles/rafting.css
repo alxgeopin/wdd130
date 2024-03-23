@@ -37,13 +37,15 @@ header {
     max-width: 100px; /* Adjust as needed */
 }
 
-/* Navigation selector */
+h1 {
+    font-family: var(--heading-font);
+    font-size: 1.5rem;
+    color: white;
+    margin: 0;
+}
+
 nav {
-    display: flex;
-    justify-content: flex-end; /* Align items to the right */
-    gap: 10px; /* Add space between navigation links */
-    flex-grow: 1; /* Allow navigation to take remaining space */
-    max-width: 50%; /* Limit navigation width */
+    text-align: right;
 }
 
 /* Navigation link selector */
@@ -75,18 +77,6 @@ main {
     height: auto;
 }
 
-/* Hero heading */
-.hero h1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-family: var(--heading-font);
-    font-size: 2em;
-    text-align: center;
-}
-
 /* Hero article */
 .hero article {
     position: absolute;
@@ -94,6 +84,22 @@ main {
     right: 20px;
     background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
     padding: 10px;
+    margin-top: 100px; /* Add margin to the top to prevent overlap with the title */
+    max-width: 300px; /* Limit width of the article */
+    overflow: hidden; /* Hide overflow */
+}
+
+/* Adjust image size */
+.hero article img {
+    max-width: 100%; /* Ensure images are responsive */
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Center images */
+}
+
+/* Adjust paragraph */
+.hero article p {
+    margin-top: 10px; /* Add some space between the image and paragraph */
 }
 
 /* History section */
@@ -114,14 +120,7 @@ section:nth-child(2) {
 .adventure-images img {
     max-width: 100%; /* Ensure images are responsive */
     height: auto;
-}
-
-.adventure-images figure {
     margin-right: 10px; /* Add space between adventure images */
-}
-
-.adventure-images figcaption {
-    text-align: center; /* Center the caption */
 }
 
 /* About Us section */
@@ -133,8 +132,6 @@ section:nth-child(4) {
 footer {
     padding: 20px;
     background-color: var(--primary-color);
-    display: flex;
-    justify-content: flex-end; /* Align social links to the right */
 }
 
 /* Footer paragraph */
@@ -144,13 +141,13 @@ footer p {
 
 /* Social links */
 .sociallinks {
-    display: flex;
-    gap: 10px; /* Add space between social icons */
+    text-align: center; /* Center the social links */
 }
 
 /* Social links img */
 .sociallinks img {
     width: 30px; /* Adjust size of social media icons */
     height: auto;
+    margin: 0 10px; /* Add spacing between icons */
     text-decoration: none; /* Remove underlines from icons */
 }
