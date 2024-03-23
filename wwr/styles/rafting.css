@@ -111,13 +111,13 @@ section:nth-child(2) {
     overflow-x: auto; /* Enable horizontal scrolling */
 }
 
-.adventure-images figure {
-    margin-right: 10px; /* Add space between adventure images */
-}
-
 .adventure-images img {
     max-width: 100%; /* Ensure images are responsive */
     height: auto;
+}
+
+.adventure-images figure {
+    margin-right: 10px; /* Add space between adventure images */
 }
 
 .adventure-images figcaption {
