@@ -5,25 +5,40 @@
   box-sizing: border-box;
 }
 
+header, footer, .grid { /* Include .grid in the combined rule */
+  max-width: 840px;
+  margin: 0 auto;
+}
+
 nav {
     background-color: steelblue;
-    padding: 10px;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 nav a {
   color: white;
   display: block;
-  padding: 20px;
+  padding: 0.5rem;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 700;
 }
 
-main{
-    max-width: 840px;
+nav a:nth-child(4),
+nav a:nth-child(5) {
+  margin-left: 1rem;
 }
 
-
+main {
+    margin: 1rem; /* Remove max-width and margin from main */
+}
 
 h1 {
   color: steelblue;
+  border-bottom: 1px solid steelblue;
 }
 
 main img {
@@ -32,41 +47,40 @@ main img {
   border: 1px solid steelblue;
   padding: 2px;
   box-shadow: 0 0 30px gray;
-  float: right; /* Float profile image to the right */
+  float: right;
 }
 
 p {
     padding: 0px;
-  }
+}
 
 aside {
   width: 20rem;
   margin: 1rem;
-  border: 1px solid rgba(0, 0, 0, 0.2); /* 1️⃣ */
+  border: 1px solid rgba(0, 0, 0, 0.2);
   padding: 1rem;
   background-color: #eee;
   color: #333;
   text-align: center;
-  position: relative; /* Set aside as a relative positioning container */
+  position: relative;
 }
 
 aside img {
     width: 200px;
     height: auto;
-  }
+}
 
-  aside h2 {
-    position: absolute; /* Position state/country heading absolutely */
-    top: 10px; /* Adjust according to your image */
-    right: 10px; /* Adjust according to your image */
-  }
+aside h2 {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
 
 footer {
   margin-top: 15px;
   border-top: 1px solid #000;
   text-align: center;
 }
-
 
 /* Class Selectors */
 
@@ -78,7 +92,18 @@ footer {
   color: #000;
 }
 
-nav a:nth-child(4),
-nav a:nth-child(5) {
-  margin-left: 1rem;
+.grid {
+  display: grid; /* Apply CSS grid to the .grid container */
+  align-items: center;
+}
+
+main {
+  grid-column: 2/3; /* Place main in the second column */
+}
+
+aside {
+  width: 20rem;
+  position: relative;
+  grid-column: 1/2; /* Place aside in the first column */
+  grid-row: 1/2; /* Place aside in the first row */
 }
