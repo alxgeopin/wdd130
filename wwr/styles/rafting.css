@@ -1,0 +1,156 @@
+/* Import selected Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Lora:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+/* Define CSS variables in the :root pseudo-class */
+:root {
+    --primary-color: #001F3F;
+    --secondary-color: #3D9970;
+    --accent1-color: #FFD700;
+    --accent2-color: #FF4136;
+    --heading-font: 'Montserrat', sans-serif;
+    --paragraph-font: 'Lora', serif;
+}
+
+/* Body selector rule */
+body {
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    margin: 0 auto; /* Center the content */
+    padding: 20px;
+}
+
+/* Header selector */
+header {
+    padding: 20px;
+    background-color: var(--primary-color);
+}
+
+/* Grid for header */
+.header-grid {
+    display: grid;
+    grid-template-columns: auto 1fr; /* Logo takes as much space as needed, rest is for navigation */
+    align-items: center; /* Align items vertically */
+}
+
+/* Logo */
+.logo img {
+    max-width: 100px; /* Adjust as needed */
+}
+
+/* Navigation selector */
+nav {
+    display: flex;
+    justify-content: flex-end; /* Align items to the right */
+    gap: 10px; /* Add space between navigation links */
+    flex-grow: 1; /* Allow navigation to take remaining space */
+    max-width: 50%; /* Limit navigation width */
+}
+
+/* Navigation link selector */
+nav a {
+    color: white;
+    margin-right: 10px; /* Add some space between links */
+    text-decoration: none;
+}
+
+/* Navigation link hover selector */
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main section */
+main {
+    padding: 20px;
+}
+
+/* Hero container */
+.hero {
+    position: relative;
+}
+
+/* Hero image */
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Hero heading */
+.hero h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: var(--heading-font);
+    font-size: 2em;
+    text-align: center;
+}
+
+/* Hero article */
+.hero article {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    padding: 10px;
+}
+
+/* History section */
+section:nth-child(2) {
+    margin-top: 20px; /* Add some space between sections */
+}
+
+/* Adventures section */
+.adventures {
+    margin-top: 20px; /* Add some space between sections */
+}
+
+.adventure-images {
+    display: flex;
+    overflow-x: auto; /* Enable horizontal scrolling */
+}
+
+.adventure-images figure {
+    margin-right: 10px; /* Add space between adventure images */
+}
+
+.adventure-images img {
+    max-width: 100%; /* Ensure images are responsive */
+    height: auto;
+}
+
+.adventure-images figcaption {
+    text-align: center; /* Center the caption */
+}
+
+/* About Us section */
+section:nth-child(4) {
+    margin-top: 20px; /* Add some space between sections */
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: flex-end; /* Align social links to the right */
+}
+
+/* Footer paragraph */
+footer p {
+    color: white;
+}
+
+/* Social links */
+.sociallinks {
+    display: flex;
+    gap: 10px; /* Add space between social icons */
+}
+
+/* Social links img */
+.sociallinks img {
+    width: 30px; /* Adjust size of social media icons */
+    height: auto;
+    text-decoration: none; /* Remove underlines from icons */
+}
